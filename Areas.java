@@ -1,6 +1,7 @@
 abstract class Figure{
     abstract double calculateArea();
 }
+
 class Circle extends Figure{
 
     private double radius;
