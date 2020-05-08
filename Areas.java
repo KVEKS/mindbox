@@ -37,9 +37,9 @@ class Triangle extends Figure {
     }
 
     public String toString() {
-        if ((hypotenuse * hypotenuse) == (a * a) + (b * b))
-            return "The area of the triangle: " + calculateArea() + ", triangle is right-angle";
-        else return "The area of the triangle: " + calculateArea() + ", triangle is non right-angle";
+        return ("The area of the triangle: " + calculateArea() + 
+                ((hypotenuse * hypotenuse) == (a * a) + (b * b) ? ", triangle is right-angle" :
+                        ", triangle is non right-angle"));
     }
 }
 
